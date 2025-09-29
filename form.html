@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unleashing Truth | Share Your Story</title>
+  <link rel="stylesheet" type="text/css" href="DavisSummerStyleSheet.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="DavisSummerHomePage1.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="table.html">Breed Stats</a></li>
+      <li><a href="form.html">Share Your Story</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Share Your Pit Bull Story</h1>
+    <p>We believe every voice matters. Use the form below to share your experience, insights, or support for pit bull advocacy.</p>
+
+    <form action="https://httpbin.org/post" method="post">
+
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <p>Are you a pit bull parent?</p>
+      <input type="radio" id="yes" name="pitbull_parent" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="pitbull_parent" value="no">
+      <label for="no">No</label><br><br>
+
+      <p>What topics matter most to you?</p>
+      <input type="checkbox" id="adoption" name="topics" value="adoption">
+      <label for="adoption">Adoption</label><br>
+      <input type="checkbox" id="training" name="topics" value="training">
+      <label for="training">Training</label><br>
+      <input type="checkbox" id="legislation" name="topics" value="legislation">
+      <label for="legislation">Breed-Specific Legislation</label><br><br>
+
+      <label for="state">Select your state:</label><br>
+      <select id="state" name="state">
+        <option value="">--Choose--</option>
+        <option value="TN">Tennessee</option>
+        <option value="GA">Georgia</option>
+        <option value="NC">North Carolina</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+
+      <label for="story">Your Story:</label><br>
+      <textarea id="story" name="story" rows="6" cols="50" placeholder="Tell us about your dog, your journey, or your advocacy..."></textarea><br>
+
+      <input type="submit" value="Submit Story">
+      <input type="reset" value="Clear Form">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Unleashing Truth. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
