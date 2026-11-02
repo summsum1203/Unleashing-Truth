@@ -33,11 +33,11 @@
       <label for="no">No</label><br><br>
 
       <p>What topics matter most to you?</p>
-      <input type="checkbox" id="adoption" name="topics" value="adoption">
+      <input type="checkbox" id="adoption" name="topics[]" value="adoption">
       <label for="adoption">Adoption</label><br>
-      <input type="checkbox" id="training" name="topics" value="training">
+      <input type="checkbox" id="training" name="topics[]" value="training">
       <label for="training">Training</label><br>
-      <input type="checkbox" id="legislation" name="topics" value="legislation">
+      <input type="checkbox" id="legislation" name="topics[]" value="legislation">
       <label for="legislation">Breed-Specific Legislation</label><br><br>
 
       <label for="state">Select your state:</label><br>
@@ -52,8 +52,8 @@
       <label for="story">Your Story:</label><br>
       <textarea id="story" name="story" rows="6" cols="50" placeholder="Tell us about your dog, your journey, or your advocacy..."></textarea><br>
 
-      <input type="submit" value="Submit Story">
-      <input type="reset" value="Clear Form">
+      <button type="submit">Submit Story</button>
+      <button type="reset">Clear Form</button>
 
     </form>
   </main>
